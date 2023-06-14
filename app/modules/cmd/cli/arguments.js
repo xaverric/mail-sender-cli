@@ -16,12 +16,25 @@ const cmdArgumentsDefinition = [
   {
     name: 'textContentFilePath',
     type: String,
-    description: 'Path to the file with text content to be sent via e-mail to all recepients.'
+    description: 'Path to the file with text content to be sent via e-mail to all recipients.'
+  },
+  {
+    name: 'textContent',
+    alias: 't',
+    type: String,
+    description: 'Text content to be sent via e-mail to all recipients.'
   },
   {
     name: 'subject',
+    alias: 's',
     type: String,
-    description: 'tbd'
+    description: 'Subject value to be used in email. Field is mandatory.'
+  },
+  {
+    name: 'from',
+    alias: 'f',
+    type: String,
+    description: 'From value to be used as an sender of an email. Field is mandatory.'
   }
 ];
 
