@@ -35,6 +35,13 @@ const cmdArgumentsDefinition = [
     alias: 'f',
     type: String,
     description: 'From value to be used as an sender of an email. Field is mandatory.'
+  },
+  {
+    name: 'attachments',
+    multiple: true,
+    alias: 'a',
+    type: String,
+    description: 'File paths to the attachments which should be sent via email.'
   }
 ];
 

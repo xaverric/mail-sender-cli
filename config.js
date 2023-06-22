@@ -1,11 +1,11 @@
 const TRANSPORT_CONFIGURATION = {
-    host: "",
-    port: 1234,
-    secure: true,
-    auth: {
-        user: "",
-        pass: ""
-    }
+    "auth": {
+        "pass": "UdnFR55p6",
+        "user": "15-9032-1"
+    },
+    "host": "smtp.plus4u.net",
+    "port": 465,
+    "secure": true
 };
 
 module.exports = {
@@ -13,7 +13,7 @@ module.exports = {
         email: {
             transportsConfiguration: TRANSPORT_CONFIGURATION,
             recipients: [
-                ""
+                "daniel.jilek@unicorn.com"
             ]
         }
     }

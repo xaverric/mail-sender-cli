@@ -9,7 +9,7 @@ const send = async (cmdArgs) => {
     const configuration = await readConfiguration(cmdArgs);
     let textDataContent = cmdArgs.textContent ? cmdArgs.textContent : readData(cmdArgs);
     const emailHtmlContent = buildEmailHtmlContent({textDataContent, subject: cmdArgs.subject})
-    await sendEmailNotification(emailHtmlContent, configuration, cmdArgs.subject, cmdArgs.from);
+    await sendEmailNotification(emailHtmlContent, configuration, cmdArgs.subject, cmdArgs.from, cmdArgs.attachments);
 }
 
 const help = usage => {
