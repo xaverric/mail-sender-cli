@@ -33,7 +33,8 @@ mail-sender-cli <command> <command parameters>
                                  mandatory.
   -f, --from string              From value to be used as an sender of an
                                  email. Field is mandatory.
-
+  -a, --attachments string[]     File paths to the attachments which should be
+                                 sent via email.
 ```
 
 ## Configuration
